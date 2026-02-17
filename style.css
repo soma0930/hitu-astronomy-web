@@ -1106,5 +1106,48 @@ footer {
     /* ロゴなどのサイズ調整 */
     .footer-logo img {
         height: 40px !important; /* 少し小さく */
+    } /* ← これは元々あった最後の閉じカッコです */
+
+/* --- 活動紹介ページ（記事一覧）のスマホ修正 --- */
+    
+    /* --- 活動紹介ページ（記事一覧）のスマホ修正（強力版） --- */
+    
+    /* 1. 記事カード全体の設定（強制縦並び） */
+    .activity-entry {
+        display: block !important;    /* Flexboxを解除して縦積みに */
+        margin-bottom: 50px !important;
+        border-bottom: 1px solid #333; /* 記事の区切り線を追加 */
+        padding-bottom: 40px;
+        gap: 0 !important; /* 隙間設定をリセット */
     }
-} /* ← これは元々あった最後の閉じカッコです */
+
+    /* 2. 画像の設定（隙間をなくす） */
+    .entry-image {
+        width: 100% !important;       /* 横幅いっぱい */
+        margin: 0 0 15px 0 !important; /* 下に15pxだけ隙間を開ける */
+        flex: none !important;
+    }
+
+    /* 画像の中身 */
+    .entry-image img {
+        width: 100% !important;
+        height: auto !important;
+        aspect-ratio: 16 / 9;         /* 横長で固定 */
+        object-fit: cover;
+    }
+
+    /* 3. 本文エリアの設定（左の余白を消す） */
+    .entry-body {
+        width: 100% !important;
+        padding: 0 !important;        /* PC用の余白を全削除 */
+        margin: 0 !important;
+    }
+
+    /* タイトルの文字サイズ調整 */
+    .entry-title {
+        font-size: 1.4rem !important;
+        margin-top: 0 !important;     /* 上の隙間を削除 */
+        line-height: 1.4 !important;
+    }
+
+} /* ← 最後の閉じカッコ（これがファイルの一番最後になります） */
