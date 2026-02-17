@@ -1,10 +1,15 @@
 @charset "UTF-8";
 
-/* 基本リセット */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+/* ★★★ これがないので追加してください！ ★★★ */
+html, body {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+/* ★ここを追加：横へのはみ出しを強制的に禁止する */
+html, body {
+    width: 100%;
+    overflow-x: hidden; /* 横スクロールを禁止 */
 }
 
 /* ヘッダーを画像の上に重ねる */
@@ -1083,4 +1088,22 @@ footer {
         font-size: 1.2rem !important;
         color: #fff !important;
     }
-}
+    /* --- ここから下を追記してください --- */
+
+    /* 3. フッターのスマホ対応（縦並びにしてはみ出し防止） */
+    .footer-container {
+        flex-direction: column !important; /* 横並びから縦並びに変更 */
+        gap: 40px !important; /* 130pxの隙間を40pxに縮める */
+        padding: 0 20px !important;
+    }
+
+    /* SNSアイコンの間隔も少し狭める */
+    .footer-sns {
+        gap: 50px !important; 
+    }
+
+    /* ロゴなどのサイズ調整 */
+    .footer-logo img {
+        height: 40px !important; /* 少し小さく */
+    }
+} /* ← これは元々あった最後の閉じカッコです */
