@@ -1152,22 +1152,25 @@ footer {
 
     /* --- ヘッダーロゴのスマホ調整（左上に小さく） --- */
     
-    /* 1. ヘッダー全体の余白を少し詰める */
+    /* --- ヘッダーロゴのスマホ調整（ハンバーガーメニューと高さを揃える） --- */
+    
+    /* 1. ヘッダー全体の余白調整 */
     .header-container {
-        padding-top: 15px !important;   /* 上の余白を調整 */
-        padding-left: 15px !important;  /* 左の余白を調整 */
-        align-items: flex-start !important; /* 上端に揃える */
+        /* ★ここを 15px から 25px に変更！これでハンバーガーと高さが合います */
+        padding-top: 25px !important;   
+        padding-left: 20px !important;  /* 左の余白も少し広げました */
+        align-items: flex-start !important;
     }
 
-    /* 2. ロゴの位置ズレ（PC用）をリセットして左上に寄せる */
+    /* 2. ロゴの位置ズレ（PC用）をリセット */
     .logo {
-        transform: none !important;     /* PC用の位置調整を無効化 */
-        margin: 0 !important;           /* 余計な余白を削除 */
+        transform: none !important;
+        margin: 0 !important;
     }
 
     /* 3. ロゴ画像を小さくする */
     .logo img {
-        height: 40px !important;        /* 高さを40pxに縮小（PCは70px） */
+        height: 40px !important;
         width: auto !important;
         margin-right: 0 !important;
     }
