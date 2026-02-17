@@ -206,7 +206,8 @@ nav ul li a {
     display: inline-flex; /* 中身の幅に合わせて伸びるようにする */
     gap: 30px;
     /* 左右に 8vw（8%）の余白を強制的に作る */
-    padding: 0 8vw 40px 8vw; 
+    padding: 0 8vw 40px 8vw;
+    align-items: center;
 }
 
 /* スクロールバー非表示 */

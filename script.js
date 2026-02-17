@@ -106,10 +106,11 @@ function displayHomePosts(contents) {
         homeContainer.appendChild(article);
     });
 
+    // 記事ループが終わったあとに追加する部分
     const moreBtn = document.createElement('a');
-    moreBtn.href = "activities.html";
-    moreBtn.className = "next-arrow";
-    moreBtn.innerHTML = `<span>MORE</span>`;
+    moreBtn.href = "activity.html";  // ★ここを正しい飛び先に変更！（activity.html または activities.html）
+    moreBtn.className = "next-arrow"; 
+    moreBtn.innerHTML = `<span>VIEW MORE</span>`; // ★文字を "VIEW MORE" に変更（お好みで）
     homeContainer.appendChild(moreBtn);
 
     initScrollObserve();
