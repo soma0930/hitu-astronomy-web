@@ -91,7 +91,8 @@ function displayHomePosts(contents) {
 
     contents.forEach(post => {
         const article = document.createElement('a');
-        article.href = `activity_detail.html?id=${post.id}`;
+        // ↓ ここを「活動紹介ページ（activity.html）」に書き換えます！
+        article.href = "activity.html"; 
         article.className = 'post-card scroll-fade';
 
         let imageUrl = "images/main_logo.png";
