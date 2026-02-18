@@ -904,6 +904,11 @@ footer {
     display: block;
     margin-bottom: 15px;
     font-size: 1.1rem;
+    
+    /* ★★★ 追加：ラベルを明朝体に ★★★ */
+    font-family: 'Noto Serif JP', serif;
+    font-weight: 300;
+    letter-spacing: 0.1em;
 }
 
 .form-item input,
@@ -915,6 +920,10 @@ footer {
     color: #fff;
     box-sizing: border-box;
     font-size: 1rem;
+
+    /* ★★★ 追加：入力する文字も明朝体に ★★★ */
+    font-family: 'Noto Serif JP', serif;
+    font-weight: 300;
 }
 
 /* 5. 送信ボタン：確実に中央へ */
@@ -933,6 +942,10 @@ footer {
     cursor: pointer;
     transition: all 0.3s;
     letter-spacing: 0.2em;
+
+    /* ★★★ 追加：ボタンの文字も明朝体に ★★★ */
+    font-family: 'Noto Serif JP', serif;
+    font-weight: 300; 
 }
 
 .btn-submit:hover {
