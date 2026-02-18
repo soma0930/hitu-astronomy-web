@@ -880,6 +880,8 @@ footer {
     font-size: 2.5rem;
     letter-spacing: 0.3em;
     color: #fff;
+    font-weight: 300;
+    font-family: 'Noto Serif JP', serif;
 }
 
 /* 3. フォーム本体：中央に寄せる */
