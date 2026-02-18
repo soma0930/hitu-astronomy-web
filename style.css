@@ -851,6 +851,9 @@ footer {
     color: #ccc;              /* 背景が黒なので明るいグレーに */
     margin: 0 auto;           /* 外枠も中央に */
     font-weight: 300;
+
+    /* ★★★ これを追加してください！ ★★★ */
+    font-family: 'Noto Serif JP', serif;
 }
 
 /* --- お問い合わせページ専用設定（他ページへの干渉なし） --- */
