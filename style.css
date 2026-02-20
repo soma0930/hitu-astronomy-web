@@ -1042,6 +1042,28 @@ footer {
 /* スマホ用：ハンバーガーボタンの強制表示設定 */
 /* style.css の一番下 */
 
+    /* --- フッター全体の修正（PCでもコピーライトを表示させる） --- */
+    footer {
+        display: flex !important;
+        flex-direction: column !important; /* コンテナとコピーライトを「縦積み」にする */
+        height: auto !important;           /* 高さを中身に合わせて自動で伸ばす */
+        background-color: #000;            /* 背景を黒に固定 */
+    }
+
+/* コピーライトの設定（さっきのコードに少し微調整を加えました） */
+    .copyright {
+        display: block !important;
+        text-align: center;
+        color: rgba(255, 255, 255, 0.7);
+        font-size: 0.8rem;
+        padding-top: 20px !important;      /* PCでも間延びしないように調整 */
+        padding-bottom: 20px !important;
+        margin: 0 !important;
+        font-family: 'Noto Sans JP', sans-serif;
+        letter-spacing: 0.05em;
+        width: 100%;
+    }
+
 @media screen and (max-width: 767px) {
     
     /* 1. ハンバーガーボタン：強制表示 */
