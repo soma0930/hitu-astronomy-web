@@ -1192,5 +1192,17 @@ footer {
         width: auto !important;
         margin-right: 0 !important;
     }
+
+    /* --- コピーライト（著作権表記） --- */
+.copyright {
+    text-align: center;
+    color: rgba(255, 255, 255, 0.4); /* 目立ちすぎない薄いグレー */
+    font-size: 0.8rem;               /* 少し小さめに */
+    margin-top: 60px;                /* 上のボタンやSNSとの余白 */
+    padding-bottom: 20px;            /* 一番下との余白 */
+    font-family: 'Noto Sans JP', sans-serif; /* 英数字が綺麗なフォント */
+    letter-spacing: 0.05em;
+    width: 100%;
+}
     
 } /* ← これがファイルの一番最後の閉じカッコになります */
