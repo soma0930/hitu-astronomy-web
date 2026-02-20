@@ -1050,7 +1050,15 @@ footer {
         background-color: #000;            /* 背景を黒に固定 */
     }
 
-/* コピーライトの設定（さっきのコードに少し微調整を加えました） */
+    /* --- フッター全体の修正（PCでも強制的に表示させる最重要コード） --- */
+    footer {
+        display: flex !important;
+        flex-direction: column !important; /* PC版でも縦積みに強制する */
+        height: auto !important;           /* 高さを自動で伸ばす */
+        background-color: #000;
+    }
+
+    /* コピーライトの設定 */
     .copyright {
         display: block !important;
         text-align: center;
@@ -1213,25 +1221,6 @@ footer {
         height: 40px !important;
         width: auto !important;
         margin-right: 0 !important;
-    }
-
-    /* 1. フッターの高さを「中身に合わせて自動で伸びる」ように強制する */
-    footer {
-        height: auto !important; 
-    }
-
-    /* 2. コピーライトの余白設定などを修正（margin → paddingに変更） */
-    .copyright {
-        display: block !important;       /* 確実に表示させる */
-        text-align: center;
-        color: rgba(255, 255, 255, 0.7); /* さっきより少し白く（明るく）しました */
-        font-size: 0.8rem;
-        padding-top: 40px;               /* marginの代わりにpaddingで内側に隙間を作る */
-        padding-bottom: 20px;
-        margin: 0 !important;            /* 外側に押し出されるのを防ぐ */
-        font-family: 'Noto Sans JP', sans-serif;
-        letter-spacing: 0.05em;
-        width: 100%;
     }    
     
 } /* ← これがファイルの一番最後の閉じカッコになります */
