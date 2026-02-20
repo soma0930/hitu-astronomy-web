@@ -1064,8 +1064,11 @@ footer {
         text-align: center;
         color: rgba(255, 255, 255, 0.7);
         font-size: 0.8rem;
-        padding-top: 20px !important;      /* PCでも間延びしないように調整 */
-        padding-bottom: 20px !important;
+    
+        /* ★★★ ここを 20px から 80px など大きな数値に変更します ★★★ */
+        padding-top: 80px !important;      
+    
+        padding-bottom: 30px !important;   /* ついでに下の余白も少しだけ広げるとバランスが良いです */
         margin: 0 !important;
         font-family: 'Noto Sans JP', sans-serif;
         letter-spacing: 0.05em;
