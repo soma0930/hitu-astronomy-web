@@ -1193,16 +1193,18 @@ footer {
         margin-right: 0 !important;
     }
 
-    /* --- コピーライト（著作権表記） --- */
-.copyright {
-    text-align: center;
-    color: rgba(255, 255, 255, 0.4); /* 目立ちすぎない薄いグレー */
-    font-size: 0.8rem;               /* 少し小さめに */
-    margin-top: 60px;                /* 上のボタンやSNSとの余白 */
-    padding-bottom: 20px;            /* 一番下との余白 */
-    font-family: 'Noto Sans JP', sans-serif; /* 英数字が綺麗なフォント */
-    letter-spacing: 0.05em;
-    width: 100%;
-}
+    /* 2. コピーライトの余白設定などを修正（margin → paddingに変更） */
+    .copyright {
+        display: block !important;       /* 確実に表示させる */
+        text-align: center;
+        color: rgba(255, 255, 255, 0.7); /* さっきより少し白く（明るく）しました */
+        font-size: 0.8rem;
+        padding-top: 40px;               /* marginの代わりにpaddingで内側に隙間を作る */
+        padding-bottom: 20px;
+        margin: 0 !important;            /* 外側に押し出されるのを防ぐ */
+        font-family: 'Noto Sans JP', sans-serif;
+        letter-spacing: 0.05em;
+        width: 100%;
+    }    
     
 } /* ← これがファイルの一番最後の閉じカッコになります */
