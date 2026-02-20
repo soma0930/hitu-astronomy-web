@@ -1193,6 +1193,11 @@ footer {
         margin-right: 0 !important;
     }
 
+    /* 1. フッターの高さを「中身に合わせて自動で伸びる」ように強制する */
+    footer {
+        height: auto !important; 
+    }
+
     /* 2. コピーライトの余白設定などを修正（margin → paddingに変更） */
     .copyright {
         display: block !important;       /* 確実に表示させる */
